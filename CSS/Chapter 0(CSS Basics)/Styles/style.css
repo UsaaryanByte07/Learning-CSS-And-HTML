@@ -1,0 +1,33 @@
+*{
+    /* Universal Selector*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    /* Element Selector */
+    font-size: 100px;
+}
+
+#H3{
+    /* ID selector */
+    font-style: italic;
+}
+
+.code{
+    /* Class Selector */
+    color: aquamarine;
+}
+
+.article{
+    color: palevioletred;
+}
+
+h3, h4, h5 {
+    /* Group Selector */
+    background-color: crimson;
+}
+
+div p {
+    /* Descendent Selector */
+    background-color: darkgreen;
+}
