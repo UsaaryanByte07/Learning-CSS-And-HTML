@@ -99,14 +99,19 @@
         step="5"
       /><br />
       <ul>
-        Select Your Gender: 
+        Select Your Gender:
         <li>
           <label for="g-male">Male</label>
           <input type="radio" name="gender" id="g-male" value="male" /><br />
         </li>
         <li>
           <label for="g-female">Female</label>
-          <input type="radio" name="gender" id="g-female" value="female" /><br />
+          <input
+            type="radio"
+            name="gender"
+            id="g-female"
+            value="female"
+          /><br />
         </li>
         <li>
           <label for="g-other">Other</label>
@@ -114,8 +119,45 @@
         </li>
         <!-- input type radios with same name will function like options to one another -->
       </ul>
+      <br />
+      <label for="mango">Mango</label>
+      <input type="checkbox" name="mango" id="mango" value="mango" /><br />
+      <label for="orange">Orange</label>
+      <input type="checkbox" name="orange" id="orange" value="orange" /><br />
+      <label for="Cherry">Cherry</label>
+      <input type="checkbox" name="Cherry" id="Cherry" value="Cherry" /><br />
+      <label for="city">City</label>
+      <select name="city" id="city">
+        <option value="null" selected disabled>Select City</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="varanasi">Varanasi</option>
+        <option value="pune">Pune</option>
+        <option value="noida">Noida</option></select
+      ><br />
+      <label for="proj_desc">Enter Description of Your Project</label>
+      <textarea
+        name="project_description"
+        id="proj_desc"
+        rows="20"
+        cols="40"
+        placeholder="Enter Your Project Details Here"
+        maxlength="10"
+      >
+      </textarea
+      ><br />
       <input type="button" value="Click Me" />
       <input type="submit" value="Submit" />
     </form>
+    <hr />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/N9NADoU8mR0?si=9a_GYfTh-Q6Z5DEN"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
