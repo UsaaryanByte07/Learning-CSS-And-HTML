@@ -1,0 +1,7 @@
+.my-text{
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+}
