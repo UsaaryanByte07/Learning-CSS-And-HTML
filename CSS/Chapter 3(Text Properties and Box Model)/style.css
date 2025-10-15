@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.my-text1{
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+}
+
+.my-text2{
+    line-height: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+.my-box{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 15px;
+    border: 10px solid blueviolet;
+    border-radius: 25px;
+    box-shadow: 3px 5px rgba(0, 0,0, 0.5);
+    box-sizing: border-box;
+}
