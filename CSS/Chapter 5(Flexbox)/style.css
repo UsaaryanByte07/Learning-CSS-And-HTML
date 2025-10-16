@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 90vw;
+  height: 600px;
+  margin: 25px 5vw;
+  border: 4px solid black;
+  background-color: springgreen;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; /*Works for Main Axis*/
+  flex-wrap: wrap;
+  /* align-items: center; */ /*Works for Cross Axis and Works on a Single Rows*/
+  align-content: space-evenly; /*Works for Cross Axis and Worsks on Multiple Rows*/
+  /*The difference between flex-direction: row-reverse and justify-content: flex-end is that the former reverses the order of the flex items, while the latter aligns them to the end of the flex container without changing their order.*/
+  /*
+    -> when flex-direction is row, main axis goes from left to right and cross axis goes from top to bottom
+    -> when flex-direction is row-reverse, main axis goes from right to left and cross axis goes from top to bottom
+    -> when flex-direction is column, main axis goes from top to bottom and cross axis goes from left to right
+    -> when flex-direction is column-reverse, main axis goes from bottom to top and cross axis goes from left to right
+    */
+}
+
+.container-item {
+  height: 150px;
+  width: 150px;
+  background-color: tomato;
+  border: 2px solid black;
+  margin: 20px;
+  /* align-self: flex-start; */ /*
+                                **Allows individual flex items to override the 
+                                **container's align-items property, aligning 
+                                **them differently along the cross-axis.
+                                */
+    /* flex-shrink: 5; The "flex-shrink" property in CSS 
+    ** determines how much a flex item 
+    ** will shrink relative to other items in 
+    ** the flex container if there is 
+    ** insufficient space. 
+    */
+    /* flex-grow: 5; The "flex-grow" property in CSS specifies how much a flex item 
+    ** will grow relative to other items in the flex container when 
+    ** additional space is available. 
+    */
+}
