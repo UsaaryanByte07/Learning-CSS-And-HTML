@@ -1,0 +1,119 @@
+* {
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.my-box {
+  font-size: 25px;
+  height: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border: 3px dashed black;
+  background-color: chocolate;
+  display: inline-block;
+}
+
+#new-box {
+  font-size: 25px;
+  height: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border: 3px dashed black;
+  background-color: chocolate;
+  display: none; /*Visiblity just hides the element but it takes the space and is present there.. while the display none removes the element means the element takes no space on page*/
+}
+
+.box {
+  font-size: 2rem; /*Relative to the Root Element HTML*/
+  margin: 10px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  background-color: springgreen;
+  padding: 10px;
+
+  height: 50%;
+  width: 80%; /*Relative to the Parent*/
+}
+
+#box1 {
+  border: 1px solid black;
+  font-size: 0.5em; /*Relative to the Parent's Font size*/
+}
+
+#box2 {
+  margin: 10px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  background-color: greenyellow;
+  padding: 10px;
+
+  /*
+  **A viewport is the visible area of a webpage or screen through which a user views content. 
+  **It represents the portion of a web page that is currently visible on a device
+  */
+  width: 80vw; /*80% of viewport height*/
+  height: 30vh;
+}
+
+.box3{
+    height: 70px;
+    width: 70px;
+    border: 5px solid black;
+    background-color: red;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#static{
+    position: static;
+    font-size: 20px;
+}
+
+#relative{
+    position:relative; /*Relative to its own static position*/
+    top: 20px;
+    left: 90px;
+    font-size: 20px;
+}
+
+#absolute{
+    position: absolute; /*Relative to the Page Boundaries*/
+    top: 200px;
+    left: 200px;
+    font-size: 20px;
+    z-index: 0;
+}
+
+#fixed{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+    font-size: 20px;
+    z-index: -1;
+}
+
+.boxx{
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: cadetblue;
+  height: 250px;
+  width: 250px;
+  border: 4px solid black;
+  border-radius: 25px;
+}
+
+.container{
+  background-color: tomato;
+  margin: 10px;
+  border: 4px solid black;
+}
+
+#box11{
+  float: right;
+}
