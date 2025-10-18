@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Basic Attribute: [attribute]
+•Exact match: [attribute="value"]
+•Starts with: [attribute^="value"]
+•Ends with: [attribute$="value"]
+•Contains: [attribute*="value"]
+Selectors (Attribute selector)
+*/
+[type]{
+    margin: 10px;
+}
+
+[placeholder]{
+    background-color: tomato;
+}
+
+[for]{
+    margin: 10px;
+}
+
+.container > p{
+    /*Direct child*/
+    color: springgreen;
+}  
+    
+h1 + p {
+    background-color: aquamarine;
+}
+
+h1 ~ p {
+    text-transform: uppercase;
+}
+
+[type="submit"]:hover{
+    background-color: aqua;
+}
+
+.overflow-box{
+    width: 250px;
+    height: 150px;
+    background-color: coral;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 500px;
+}
+
+.visible{
+    overflow: visible;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.scroll{
+    overflow: scroll;
+}
+/*Once overflow is defined scroll there will be always some space left for scroll bar even if the content is not overflowing.. where as in auto it will bring the scroll bar only if contnet is overflowing*/
+.auto{
+    overflow: auto;
+}
+
