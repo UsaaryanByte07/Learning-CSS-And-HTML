@@ -1,0 +1,72 @@
+.box{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    background-color: aquamarine; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.box1{
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+    /*transition: all 2s ease-in-out 2s; ..shorthand*/
+}
+
+.box1:hover{
+    width: 500px;
+    background-color: burlywood;
+}
+
+.box2{
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+
+.box2:hover{
+    background-color: chocolate;
+    /* transform: rotatex(360deg); */
+    /* transform: scale(3); */
+    /* transform: translate(200px,500px); */
+    transform: skew(90deg);
+}
+
+.box3{
+    position: absolute;
+    animation-name: chal;
+    animation-duration: 2s;
+    animation-delay: 2sec;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes chal{
+    from{
+        /*From is 0%*/
+        left: 0px;
+    }
+    20%{
+        transform: rotate(90deg);
+    }
+    40%{
+        transform: scale(2);
+    }
+    60%{
+        background-color: blue;
+    }
+    to{
+        /*to is 100%*/
+        left: 450px;
+    }
+}
